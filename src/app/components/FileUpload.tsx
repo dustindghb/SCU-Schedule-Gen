@@ -16,6 +16,8 @@ import * as XLSX from 'xlsx';
 import { Requirement, CourseOption } from "../types";
 import { REQUIREMENT_COURSE_OPTIONS } from "../constants";
 
+type SheetRow = (string | number | boolean | Date | null | undefined)[];
+
 interface FileUploadProps {
   uploadedFile: File | null;
   onFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -177,7 +179,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({
           const worksheet = workbook.Sheets[firstSheetName];
           
           // Convert to JSON array
-          const jsonData = XLSX.utils.sheet_to_json(worksheet, {header: 1}) as any[][];
+          const jsonData = XLSX.utils.sheet_to_json(worksheet, {header: 1}) as SheetRow[];
           
           // Parse requirements from the data
           const requirementsMap = new Map<string, ParsedRequirement>();

@@ -24,7 +24,6 @@ export default function QuarterlyPlanner() {
     uploadedFile,
     handleFileUpload,
     addQuarter,
-    clearQuarter,
     autoGenerateCourses,
     onDragEnd,
     handleCourseSelect,
@@ -112,7 +111,6 @@ export default function QuarterlyPlanner() {
                 tokens={tokens}
                 requirements={requirements}
                 onAddQuarter={addQuarter}
-                onClearQuarter={clearQuarter}
                 onAutoGenerate={autoGenerateCourses}
                 onCourseSelect={handleCourseSelect}
                 onToggleExpand={handleToggleExpand}

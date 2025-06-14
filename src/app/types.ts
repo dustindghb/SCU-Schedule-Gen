@@ -19,8 +19,12 @@ export interface CourseOption {
   code: string;
   name: string;
   credits: number;
+  availableQuarters?: string[];
+  hoursPerWeek: number;
+  difficulty: number;
+  quality: number;
+  rating: number;
   prerequisites?: string[];
-  availableQuarters?: string[]; // Added missing property
 }
 
 export interface Requirement {

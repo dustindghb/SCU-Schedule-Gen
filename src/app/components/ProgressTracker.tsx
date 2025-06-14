@@ -150,8 +150,7 @@ export const ProgressTracker: React.FC<ProgressTrackerProps> = ({
             }}
           >
             <Typography variant="body2" color="success.dark" sx={{ fontWeight: "bold" }}>
-              🎓 Congratulations! You've completed all your degree requirements! 
-              Ready to graduate? 🎉
+            Congratulations! You&apos;ve completed all your degree requirements!
             </Typography>
           </Box>
         )}
@@ -168,7 +167,7 @@ export const ProgressTracker: React.FC<ProgressTrackerProps> = ({
             }}
           >
             <Typography variant="body2" color="info.dark" sx={{ fontWeight: "bold" }}>
-              🚀 You're in the home stretch! Only {remainingCount} requirement{remainingCount !== 1 ? 's' : ''} left to complete!
+              You&apos;re in the home stretch! Only {remainingCount} requirement{remainingCount !== 1 ? 's' : ''} left to complete!
             </Typography>
           </Box>
         )}

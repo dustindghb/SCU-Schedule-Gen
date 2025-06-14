@@ -168,7 +168,7 @@ export const CourseItem: React.FC<CourseItemProps> = ({
                   Courses that fulfill {requirementCategory} requirement:
                 </Typography>
                 {fulfillmentOptions.map((courseOption: CourseOption, idx: number) => {
-                  const isSelected = selectedCourse === courseOption.courseName;
+                  const isSelected = selectedCourse === courseOption.name;
                   return (
                     <Card 
                       key={idx} 
@@ -182,12 +182,12 @@ export const CourseItem: React.FC<CourseItemProps> = ({
                       <CardContent sx={{ p: 2, "&:last-child": { pb: 2 } }}>
                         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", mb: 1 }}>
                           <Typography variant="subtitle2" sx={{ fontWeight: "bold", flex: 1 }}>
-                            {courseOption.courseName}
+                            {courseOption.name}
                           </Typography>
                           <Button
                             variant={isSelected ? "contained" : "outlined"}
                             size="small"
-                            onClick={() => handleSelectCourse(courseOption.courseName)}
+                            onClick={() => handleSelectCourse(courseOption.name)}
                             startIcon={isSelected ? <CheckCircle /> : null}
                             sx={{ 
                               ml: 2,
@@ -210,7 +210,7 @@ export const CourseItem: React.FC<CourseItemProps> = ({
                             </Typography>
                           </Box>
                           <Box sx={{ display: "flex", gap: 0.5, flexWrap: "wrap" }}>
-                            {courseOption.availableQuarters.map((quarter, qIdx) => (
+                            {courseOption.availableQuarters?.map((quarter, qIdx) => (
                               <Chip
                                 key={qIdx}
                                 label={quarter}

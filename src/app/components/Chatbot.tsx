@@ -21,7 +21,6 @@ import {
   ExpandLess,
   ExpandMore,
   SmartToy,
-  Person
 } from "@mui/icons-material";
 
 interface ChatMessage {

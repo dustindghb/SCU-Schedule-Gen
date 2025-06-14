@@ -13,6 +13,12 @@ import { AutoAwesome } from "@mui/icons-material";
 import { Quarter, Requirement } from "../types";
 import { CourseItem } from "./CourseItem";
 
+interface Course {
+  id: string;
+  requirementId?: string;
+  // Add other course properties as needed
+}
+
 interface QuarterCardProps {
   quarter: Quarter;
   tokens: number;
@@ -31,7 +37,7 @@ export const QuarterCard: React.FC<QuarterCardProps> = ({
   onToggleExpand,
 }) => {
   // Helper function to get requirement data for a course
-  const getRequirementForCourse = (course: any): Requirement | undefined => {
+  const getRequirementForCourse = (course: Course): Requirement | undefined => {
     if (course.requirementId) {
       return requirements.find(req => req.id === course.requirementId);
     }

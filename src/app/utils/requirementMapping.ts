@@ -1,6 +1,13 @@
 import { CourseOption, Requirement } from "../types";
 import { REQUIREMENT_COURSE_OPTIONS } from "../constants";
 
+interface TranscriptCourse {
+  course: string;
+  period: string;
+  units: string;
+  grade: string;
+}
+
 /**
  * Maps requirement names from academic transcripts to course option categories
  */
@@ -122,7 +129,7 @@ export const createRequirementFromTranscript = (
   id: string,
   name: string,
   status: string,
-  courses: Array<{course: string; period: string; units: string; grade: string}>
+  courses: TranscriptCourse[]
 ): Requirement => {
   const simplifiedName = simplifyRequirementName(name);
   const courseOptions = mapRequirementToCourseOptions(name);
@@ -145,7 +152,7 @@ export const createRequirementFromTranscript = (
  * Filters and processes requirements from transcript data
  */
 export const processTranscriptRequirements = (
-  transcriptData: Map<string, {status: string; courses: any[]}>
+  transcriptData: Map<string, {status: string; courses: TranscriptCourse[]}>
 ): Requirement[] => {
   const requirements: Requirement[] = [];
   let reqId = 1;

@@ -22,19 +22,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "CSCI 10", 
       name: "Introduction to Computer Science", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 8,
+      difficulty: 2,
+      quality: 4.2,
+      rating: 4.2
     },
     { 
       code: "COEN 11", 
       name: "Programming Fundamentals", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 9,
+      difficulty: 3,
+      quality: 4.0,
+      rating: 4.0
     },
     { 
       code: "CS 106A", 
       name: "Programming Methodology", 
       credits: 5,
-      availableQuarters: ["Fall", "Spring"]
+      availableQuarters: ["Fall", "Spring"],
+      hoursPerWeek: 10,
+      difficulty: 3,
+      quality: 4.5,
+      rating: 4.5
     },
   ],
   "Data Structures": [
@@ -42,19 +54,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "CSCI 61", 
       name: "Data Structures", 
       credits: 4,
-      availableQuarters: ["Winter", "Spring"]
+      availableQuarters: ["Winter", "Spring"],
+      hoursPerWeek: 12,
+      difficulty: 4,
+      quality: 4.1,
+      rating: 4.1
     },
     { 
       code: "CSCI 62", 
       name: "Advanced Programming", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter"]
+      availableQuarters: ["Fall", "Winter"],
+      hoursPerWeek: 11,
+      difficulty: 4,
+      quality: 3.9,
+      rating: 3.9
     },
     { 
       code: "COEN 12", 
       name: "Abstract Data Types", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 10,
+      difficulty: 3,
+      quality: 4.3,
+      rating: 4.3
     },
   ],
   "Calculus II": [
@@ -62,19 +86,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "MATH 12", 
       name: "Calculus II", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 8,
+      difficulty: 4,
+      quality: 3.8,
+      rating: 3.8
     },
     { 
       code: "MATH 13", 
       name: "Calculus III", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 9,
+      difficulty: 4,
+      quality: 3.7,
+      rating: 3.7
     },
     { 
       code: "MATH 14", 
       name: "Differential Equations", 
       credits: 4,
-      availableQuarters: ["Winter", "Spring"]
+      availableQuarters: ["Winter", "Spring"],
+      hoursPerWeek: 10,
+      difficulty: 5,
+      quality: 3.6,
+      rating: 3.6
     },
   ],
   "Physics I": [
@@ -82,19 +118,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "PHYS 31", 
       name: "Physics I", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 9,
+      difficulty: 3,
+      quality: 3.9,
+      rating: 3.9
     },
     { 
       code: "PHYS 32", 
       name: "Physics II", 
       credits: 4,
-      availableQuarters: ["Winter", "Spring"]
+      availableQuarters: ["Winter", "Spring"],
+      hoursPerWeek: 10,
+      difficulty: 4,
+      quality: 3.8,
+      rating: 3.8
     },
     { 
       code: "PHYS 33", 
       name: "Physics III", 
       credits: 4,
-      availableQuarters: ["Spring"]
+      availableQuarters: ["Spring"],
+      hoursPerWeek: 11,
+      difficulty: 4,
+      quality: 3.7,
+      rating: 3.7
     },
   ],
   "Technical Writing": [
@@ -102,19 +150,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "ENGL 1A", 
       name: "Critical Thinking & Writing", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 6,
+      difficulty: 2,
+      quality: 4.0,
+      rating: 4.0
     },
     { 
       code: "ENGL 2", 
       name: "Critical Reading & Writing", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 7,
+      difficulty: 2,
+      quality: 3.9,
+      rating: 3.9
     },
     { 
       code: "COMM 12", 
       name: "Public Speaking", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring", "Summer"]
+      availableQuarters: ["Fall", "Winter", "Spring", "Summer"],
+      hoursPerWeek: 5,
+      difficulty: 1,
+      quality: 4.3,
+      rating: 4.3
     },
   ],
   "Ethics in Technology": [
@@ -122,19 +182,31 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "PHIL 9", 
       name: "Ethics", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 6,
+      difficulty: 2,
+      quality: 4.1,
+      rating: 4.1
     },
     { 
       code: "ENGR 10", 
       name: "Engineering Ethics", 
       credits: 1,
-      availableQuarters: ["Fall", "Winter", "Spring"]
+      availableQuarters: ["Fall", "Winter", "Spring"],
+      hoursPerWeek: 2,
+      difficulty: 1,
+      quality: 3.8,
+      rating: 3.8
     },
     { 
       code: "PHIL 26", 
       name: "Technology and Society", 
       credits: 4,
-      availableQuarters: ["Winter", "Spring"]
+      availableQuarters: ["Winter", "Spring"],
+      hoursPerWeek: 7,
+      difficulty: 3,
+      quality: 4.0,
+      rating: 4.0
     },
   ],
   "default": [
@@ -142,13 +214,21 @@ export const REQUIREMENT_COURSE_OPTIONS: Record<string, CourseOption[]> = {
       code: "ELECTIVE", 
       name: "General Elective", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring", "Summer"]
+      availableQuarters: ["Fall", "Winter", "Spring", "Summer"],
+      hoursPerWeek: 6,
+      difficulty: 2,
+      quality: 3.5,
+      rating: 3.5
     },
     { 
       code: "GE", 
       name: "General Education", 
       credits: 4,
-      availableQuarters: ["Fall", "Winter", "Spring", "Summer"]
+      availableQuarters: ["Fall", "Winter", "Spring", "Summer"],
+      hoursPerWeek: 5,
+      difficulty: 2,
+      quality: 3.7,
+      rating: 3.7
     },
   ]
 };
